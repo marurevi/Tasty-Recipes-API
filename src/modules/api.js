@@ -21,3 +21,4 @@ const getRecipes = async () => {
 };
 
 export default getRecipes;
+console.log(getRecipes())

@@ -7,7 +7,7 @@
 .nav {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   color: black;
   margin-top: 50px;
@@ -20,5 +20,5 @@
 
 .nav img {
   margin-left: 50px;
-  width: 100px;
+  width: 150px;
 }
