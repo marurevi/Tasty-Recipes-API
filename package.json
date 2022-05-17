@@ -1,5 +1,5 @@
 {
-  "name": "breaking-news-api",
+  "name": "tasty-recipes-api",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "private": true,
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marurevi/Breaking-News-API.git"
+    "url": "git+https://github.com/marurevi/Tasty-Recipes-API.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marurevi/Breaking-News-API/issues"
+    "url": "https://github.com/marurevi/Tasty-Recipes-API/issues"
   },
-  "homepage": "https://github.com/marurevi/Breaking-News-API#readme",
+  "homepage": "https://github.com/marurevi/Tasty-Recipes-API#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.17.9",
     "babel-eslint": "^10.1.0",
