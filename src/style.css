@@ -8,7 +8,7 @@
 .nav {
   display: flex;
   list-style: none;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   color: black;
   margin-top: 2em;
@@ -20,7 +20,6 @@
 }
 
 .nav img {
-  margin-left: 50px;
   width: 150px;
 }
 
