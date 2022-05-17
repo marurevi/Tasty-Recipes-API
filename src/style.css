@@ -13,9 +13,10 @@ a {
   padding: 1rem;
   position: absolute;
   bottom: 0;
-  width: -webkit-fill-available;
+  width: calc(100% - 2px);
   margin: 2px;
 }
+
 .developer {
   font-weight: bold;
   color: black;
