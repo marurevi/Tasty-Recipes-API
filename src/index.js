@@ -1,9 +1,9 @@
 import './style.css';
+import displayCards from './modules/displayData.js';
 import getRecipes from './modules/api.js';
 import { hidePopup } from './modules/popup.js';
 
 const closeIcon = document.querySelector('.close-icon');
-
 let recipesArr = [];
 
 if (localStorage.getItem('recipes')) {
@@ -21,3 +21,5 @@ if (localStorage.getItem('recipes')) {
 closeIcon.addEventListener('click', () => {
   hidePopup();
 });
+
+displayCards(); /* check this function */
