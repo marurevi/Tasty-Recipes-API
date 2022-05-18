@@ -8,12 +8,14 @@ const displayCards = async () => {
 
   for (let i = 0; i < recipes.length; i += 1) {
     const card = document.createElement('ul');
-    card.innerHTML = `<li><img src= ${recipes[i].thumbnail_url}></li>
-    <li>${recipes[i].name}</li>
-    <li>id= ${recipes[i].id} - likes [ ]</li>
+    if (i < 9) {
+      card.innerHTML = `<li><img src= ${recipes[i].thumbnail_url}></li>
+    <li class="text1">${recipes[i].name}</li>
+    <li class="text2">id= ${recipes[i].id} - likes [ ]</li>
     <button type= "button" class= "comment">Comment</button>`;
-    card.className = 'card';
-    container.append(card);
+      card.className = 'card';
+      container.append(card);
+    }
   }
 };
 
