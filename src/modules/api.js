@@ -5,7 +5,7 @@ const options = {
   params: { from: '0', size: '12', q: '' },
   headers: {
     'X-RapidAPI-Host': 'tasty.p.rapidapi.com',
-    'X-RapidAPI-Key': '0ad5922801msh51e87bd70a9e20cp10fc6fjsn6f62ab061806',
+    'X-RapidAPI-Key': '37164b7c45mshcc00bf1093d3c29p1f7efajsnb7dc22766d81',
   },
 };
 
@@ -21,3 +21,4 @@ const getRecipes = async () => {
 };
 
 export default getRecipes;
+

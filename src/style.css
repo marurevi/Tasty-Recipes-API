@@ -68,7 +68,7 @@ body {
   max-width: 90%;
 }
 
-.card button {
+.card .comment {
   padding: 0.8rem;
   margin: 1.2em;
   font-style: oblique;
