@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <title>Tasty Recipes</title>
 </head>
 <body>
@@ -15,8 +16,25 @@
       <li>About us</li>
     </ul>
   </header>
+
   <main class="grid-container" id="container">
   </main>
+
+  <section class="overlay">
+      <div class="popup-container">
+        <div class="popup-header">
+            <div class="thumbnail"></div>
+            <span class="material-symbols-outlined close-icon">
+                close
+            </span>
+        </div>
+        <div class="popup-content">
+          <h1 class="recipe-title"></h1>
+          <p class="popup-desc"></p>
+        </div>
+      </div>
+  </section>
+
   <footer>
     <p class="rights">Created by 
       <a class="developer" href="https://github.com/devMahmoud">Mahmoud Makhlouf</a>
