@@ -27,6 +27,55 @@ a {
   text-decoration: none;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  background: #fff;
+  overflow: auto;
+}
+
+.popup-container {
+  margin: auto;
+  height: 90%;
+  width: 90%;
+  border: 2px solid #000;
+  padding: 1rem;
+}
+
+.popup-header {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 40%;
+  background-image: url(../dist/images/loading.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+}
+
+.close-icon {
+  font-weight: bolder;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-title {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
 footer {
   border: 2px solid #000;
   padding: 1rem;
@@ -39,4 +88,8 @@ footer {
 .developer {
   font-weight: bold;
   color: black;
+}
+
+.hidden {
+  display: none;
 }
