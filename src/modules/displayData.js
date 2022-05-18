@@ -2,9 +2,8 @@ import getRecipes from './api.js';
 
 const container = document.getElementById('container');
 
-const displayCards = async () => {
-  const recipes = await getRecipes();
-
+const displayCards = (recipes) => {
+  
   for (let i = 0; i < recipes.length; i += 1) {
     const card = document.createElement('ul');
     card.innerHTML = `<li><img src= ${recipes[i].thumbnail_url}></li>

@@ -8,12 +8,13 @@ let recipesArr = [];
 
 if (localStorage.getItem('recipes')) {
   recipesArr = JSON.parse(localStorage.getItem('recipes'));
-  console.log(recipesArr);
+  displayCards(recipesArr);
 } else {
   const createRecipes = async () => {
     const recipes = await getRecipes();
     localStorage.setItem('recipes', JSON.stringify(recipes));
     recipesArr = JSON.parse(localStorage.getItem('recipes'));
+    displayCards(recipesArr);
   };
   createRecipes();
 }
@@ -21,5 +22,3 @@ if (localStorage.getItem('recipes')) {
 closeIcon.addEventListener('click', () => {
   hidePopup();
 });
-
-displayCards(); /* check this function */
