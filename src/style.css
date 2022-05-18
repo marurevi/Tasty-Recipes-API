@@ -131,6 +131,13 @@ body {
   margin-bottom: 0.5em;
 }
 
+.likes:hover {
+  background-image: url(../dist/images/blackHeart.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+}
+
 a {
   text-decoration: none;
 }
