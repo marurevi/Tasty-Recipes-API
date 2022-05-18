@@ -17,7 +17,7 @@ const getRecipes = async () => {
   } catch (err) {
     return err;
   }
-  return result;
+  return result.results;
 };
 
 export default getRecipes;
