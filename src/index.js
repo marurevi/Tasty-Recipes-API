@@ -1,6 +1,6 @@
 import './style.css';
 import displayCards from './modules/displayData.js';
-import getRecipes from './modules/api.js';
+import getRecipes from './modules/tasty-api.js';
 import { hidePopup } from './modules/popup.js';
 
 const closeIcon = document.querySelector('.close-icon');
