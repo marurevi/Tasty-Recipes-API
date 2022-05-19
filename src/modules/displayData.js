@@ -1,4 +1,6 @@
+
 import { getLikesArr } from './involvement-api.js';
+import { showPopup } from './popup.js';
 
 const container = document.querySelector('.grid-container');
 
@@ -17,6 +19,10 @@ const displayCards = async (recipes) => {
     <button type= "button" class= "comment" id="${i}">Comment</button>`;
     card.className = 'card';
     container.append(card);
+    const commentBtn = document.getElementById(`${i}`);
+    commentBtn.addEventListener('click', () => {
+      showPopup(recipes[i], recipes[i].id);
+    });
   }
 };
 
