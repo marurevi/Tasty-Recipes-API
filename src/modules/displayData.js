@@ -3,6 +3,7 @@ import { getLikes } from './involment-api.js';
 const container = document.querySelector('.grid-container');
 
 const displayCards = async (recipes) => {
+
   for (let i = 0; i < recipes.length; i += 1) {
     const nroLikes = await getLikes(recipes[i].id); // eslint-disable-line
     const card = document.createElement('ul');
