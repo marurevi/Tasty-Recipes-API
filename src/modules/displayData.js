@@ -1,10 +1,15 @@
-import { getLikes } from './involment-api.js';
+import { getLikesArr } from './involvement-api.js';
 
 const container = document.querySelector('.grid-container');
 
 const displayCards = async (recipes) => {
+  const arrayOfLikes = await getLikesArr();
   for (let i = 0; i < recipes.length; i += 1) {
-    const nroLikes = await getLikes(recipes[i].id); // eslint-disable-line
+    let nroLikes = 0;
+    const likedObj = arrayOfLikes.find((element) => element.item_id === recipes[i].id);
+    if (likedObj) {
+      nroLikes = likedObj.likes;
+    }
     const card = document.createElement('ul');
     card.innerHTML = `<li><img src= ${recipes[i].thumbnail_url}></li>
     <li class="text1">${recipes[i].name}</li>

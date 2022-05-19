@@ -20,7 +20,7 @@ const addLike = async (itemId) => {
   return result;
 };
 
-const getLikes = async () => {
+const getLikesArr = async () => {
   let result;
   try {
     const res = await fetch(`${baseUrl}apps/${appId}/likes/`);
@@ -31,4 +31,4 @@ const getLikes = async () => {
   return result;
 };
 
-export { addLike, getLikes };
+export { addLike, getLikesArr };
