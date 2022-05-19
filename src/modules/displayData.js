@@ -1,3 +1,5 @@
+import { showPopup } from './popup.js';
+
 const container = document.getElementById('container');
 
 const displayCards = (recipes) => {
@@ -9,6 +11,10 @@ const displayCards = (recipes) => {
     <button type= "button" class= "comment" id="${i}">Comment</button>`;
     card.className = 'card';
     container.append(card);
+    const commentBtn = document.getElementById(`${i}`);
+    commentBtn.addEventListener('click', () => {
+      showPopup(recipes[i]);
+    });
   }
 };
 
