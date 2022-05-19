@@ -20,7 +20,7 @@ const addLike = async (itemId) => {
   return result;
 };
 
-const getLikes = async () => {
+const getLikesArr = async () => {
   let result;
   try {
     const res = await fetch(`${baseUrl}apps/${appId}/likes/`);
@@ -29,6 +29,20 @@ const getLikes = async () => {
     return err;
   }
   return result;
+};
+
+const getLikes = async (itemId) => {
+  const arrayOfLikes = await getLikesArr();
+
+  let nroLikes;
+  for (let object = 0; object < arrayOfLikes.length; object += 1) {
+    if (object.item_id === itemId) {
+      nroLikes = object.likes;
+    } else {
+      nroLikes = 0;
+    }
+  }
+  return nroLikes;
 };
 
 export { addLike, getLikes };
