@@ -1,10 +1,7 @@
-import { getLikes } from "./involvement-api";
-
 const container = document.querySelector('.grid-container');
 
 const displayCards = (recipes, nroLikes = 0) => {
   for (let i = 0; i < recipes.length; i += 1) {
-    
     const card = document.createElement('ul');
     card.innerHTML = `<li><img src= ${recipes[i].thumbnail_url}></li>
     <li class="text1">${recipes[i].name}</li>
