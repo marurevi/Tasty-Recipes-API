@@ -1,4 +1,3 @@
-
 import { getLikesArr } from './involvement-api.js';
 import { showPopup } from './popup.js';
 

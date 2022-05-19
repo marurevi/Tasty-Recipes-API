@@ -63,5 +63,6 @@ const getComments = async (itemId) => {
   return result;
 };
 
-export { addLike, getLikes, addComment, getComments };
-export { addLike, getLikesArr };
+export {
+  addLike, getLikesArr, addComment, getComments,
+};
