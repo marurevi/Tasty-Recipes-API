@@ -13,7 +13,7 @@ const displayCards = (recipes) => {
     container.append(card);
     const commentBtn = document.getElementById(`${i}`);
     commentBtn.addEventListener('click', () => {
-      showPopup(recipes[i]);
+      showPopup(recipes[i], recipes[i].id);
     });
   }
 };

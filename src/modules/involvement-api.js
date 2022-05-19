@@ -52,6 +52,17 @@ const addComment = async (itemId, username, comment) => {
   return result;
 };
 
+const getComments = async (itemId) => {
+  let result;
+  try {
+    const res = await fetch(`${baseUrl}apps/${appId}/comments/?item_id=${itemId}`);
+    result = await res.json();
+  } catch (err) {
+    return err;
+  }
+  return result;
+};
+
 export {
-  addLike, getLikes, addComment,
+  addLike, getLikes, addComment, getComments,
 };

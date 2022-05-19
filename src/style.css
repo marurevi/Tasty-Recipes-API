@@ -171,6 +171,27 @@ a {
   margin-bottom: 1rem;
 }
 
+.comments-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.comments-header {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.counter-span {
+  margin-left: 0.5rem;
+}
+
+.comments-list {
+  list-style: none;
+  margin: 1rem 0;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
