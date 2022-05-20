@@ -1,19 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Tasty Recipes
 
-> Description the project.
+The JavaScript capstone project is about building our own web application based on an external API. We selected an API called Tasty that provides data about a recipes then we built the webapp around it.
 
 
 ## Built With
 
 - Major languages
+    HTML, CSS, JavaScript
 - Frameworks
+    Webpack, Jest
 - Technologies used
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://marurevi.github.io/Tasty-Recipes-API/)
 
 
 ## Getting Started
@@ -29,10 +31,11 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 ### Install
-
+npm install
 ### Usage
-
+npm run start
 ### Run tests
+npm run test
 
 ### Deployment
 
