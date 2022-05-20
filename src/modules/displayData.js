@@ -1,7 +1,9 @@
 import { getLikesArr, addLike } from './involvement-api.js';
+import cardsCounter from './cards-counter.js';
 import { showPopup } from './popup.js';
 
 const container = document.querySelector('.grid-container');
+const counterDisplay = document.querySelector('.counter');
 
 const displayCards = async (recipes) => {
   const arrayOfLikes = await getLikesArr();
@@ -29,6 +31,7 @@ const displayCards = async (recipes) => {
       addLike(itemId);
     });
   }
+  counterDisplay.innerHTML = `${cardsCounter(recipes)} Differnt options to choose!`;
 };
 
 export default displayCards;
