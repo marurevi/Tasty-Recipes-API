@@ -1,4 +1,5 @@
 import { getLikesArr, addLike } from './involvement-api.js';
+import cardsCounter from './cards-counter.js';
 import { showPopup } from './popup.js';
 
 const container = document.querySelector('.grid-container');
@@ -6,6 +7,8 @@ const container = document.querySelector('.grid-container');
 const displayCards = async (recipes) => {
   const arrayOfLikes = await getLikesArr();
   for (let i = 0; i < recipes.length; i += 1) {
+    const counterDisplay = document.querySelector('.counter');
+    counterDisplay.innerHTML = `${cardsCounter(i)} Differnt options to choose!`;
     let nroLikes = 0;
     const likedObj = arrayOfLikes.find((element) => element.item_id === recipes[i].id);
     if (likedObj) {

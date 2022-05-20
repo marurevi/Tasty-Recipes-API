@@ -23,6 +23,12 @@ body {
   font-weight: 400;
 }
 
+.counter {
+  margin-left: 4em;
+  font-family: 'Bangers', cursive;
+  font-stretch: extra-expanded;
+}
+
 .card li {
   margin: 0.3em 0;
 }
