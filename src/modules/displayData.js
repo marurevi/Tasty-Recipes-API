@@ -24,7 +24,8 @@ const displayCards = async (recipes) => {
     });
     const likeBtn = document.getElementById(`${recipes[i].id}`);
     likeBtn.addEventListener('click', () => {
-      const itemId = recipes[i].id
+      const itemId = recipes[i].id;
+      likeBtn.parentNode.innerHTML= `<button type="button" class="likes" id="${recipes[i].id}">.....</button><br>Likes ${nroLikes + 1}</li>`
       addLike(itemId);
     });
   }
