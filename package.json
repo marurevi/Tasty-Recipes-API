@@ -4,7 +4,7 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "private": true,
   "scripts": {
-    "test": "clear && set NODE_OPTIONS='--experimental-vm-modules' && jest --coverage",
+    "test": "set NODE_OPTIONS='--experimental-vm-modules' && jest --coverage",
     "watch": "jest --watchAll",
     "start": "webpack serve --open",
     "build": "webpack"
