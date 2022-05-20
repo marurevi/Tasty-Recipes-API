@@ -2,15 +2,17 @@
  * @jest-environment jsdom
  */
 
-// import commentsCounter from './comment-counter.js';
-import { getComments, addComment } from './involvement-api.js';
+import commentsCounter from './comment-counter.js';
 
-describe('The counter should increase by one after adding a comment', () => {
-  test('Add comment', () => {
-    const initialCommentsLength = getComments(3164);
-    console.log(initialCommentsLength);
-    addComment();
-    const updatedCommentsLength = getComments(3164).length;
-    expect(updatedCommentsLength).toBe(initialCommentsLength + 1);
+describe('The commentsCounter should return the length of the array it takes', () => {
+  test('Comments Counter', async () => {
+    const count = commentsCounter([
+      {
+        username: 'Mahmoud',
+        comment: 'Tasty!',
+        creation_date: '2022-05-19',
+      },
+    ]);
+    expect(count).toBe(1);
   });
 });
