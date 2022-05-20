@@ -1,9 +1,33 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Tasty Recipes
+# TASTY RECIPIES | API-based webapp
+We built our own web application based on an external API. We selected an [API](https://rapidapi.com/apidojo/api/tasty/) that provides data about food recipies. The webapp has 2 user interfaces:
 
-The JavaScript capstone project is about building our own web application based on an external API. We selected an API called Tasty that provides data about a recipes then we built the webapp around it.
+- A home page showing a list of items that you can "like."
+- A popup window with more data about an item that you can use to comment on it or reserve it for a period of time.
+In this pages we implement the followings features:
+## Home page
+ > When the page loads, the webapp retrieves data from:
+  The selected API and shows the list of items on screen.
+  The Involvement API to show the item likes.
+  The page make only 2 requests:
+    - One to the base API.
+    - And one to the Involvement API.
+  > When the user clicks on the Like button of an item, the interaction is recorded in the Involvement 
+  >  API and the screen is updated.
+  > When the user clicks on the "Comments" button, the Comments popup appears.
 
+## Comments popup
+> When the popup loads, the webapp retrieves data from:
+> The selected API and shows details about the selected item.
+> The Involvement API to show the item comments.
+> When the user clicks on the "Comment" button, the data is recorded in the Involvement API and the screen is updated.
+
+## Counters We have counters in all the interfaces that show:
+
+- The number of items (home).
+- The number of comments (comments popup).
+- We created a specific function to calculate these numbers in each page. These count functions were tested using Jest.
 
 ## Built With
 
