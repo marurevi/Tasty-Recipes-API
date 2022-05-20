@@ -13,7 +13,7 @@ The JavaScript capstone project is about building our own web application based 
     Webpack, Jest
 - Technologies used
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://marurevi.github.io/Tasty-Recipes-API/dist/index.html)
 
@@ -23,26 +23,19 @@ The JavaScript capstone project is about building our own web application based 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
-
+ Get the latest version of Node.js
 ### Install
-npm install
+ npm install
 ### Usage
-npm run start
+ npm run start
 ### Run tests
-npm run test
+ npm run test
 
 ### Deployment
-
-
+ npm run start
 
 ## Authors
 
