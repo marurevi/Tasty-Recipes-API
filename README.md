@@ -18,6 +18,9 @@ The JavaScript capstone project is about building our own web application based 
 [Live Demo Link](https://marurevi.github.io/Tasty-Recipes-API/dist/index.html)
 
 
+![presentation](https://user-images.githubusercontent.com/92180054/169616865-51ae370d-e276-4e74-a592-6679250cf875.png)
+
+
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
