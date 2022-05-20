@@ -8,6 +8,9 @@
 
 body {
   background-color: rgb(80, 80, 80);
+  background-image: url(../dist/images/background\ 5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: whitesmoke;
 }
 
@@ -21,12 +24,14 @@ body {
   margin-top: 0.5em;
   font-family: 'Bangers', cursive;
   font-weight: 400;
+  text-shadow: #000 2px 2px 2px;
 }
 
 .counter {
   margin-left: 4em;
   font-family: 'Bangers', cursive;
   font-stretch: extra-expanded;
+  text-shadow: #000 2px 2px 2px;
 }
 
 .card li {
@@ -57,7 +62,7 @@ body {
   margin: 2em 4em;
   padding: 2em;
   border-radius: 25px;
-  background-color: whitesmoke;
+  background-color: rgb(245, 245, 245, 0.5);
   color: #000;
   box-shadow: #000 10px 10px 25px;
   margin-bottom: 2.5em;
@@ -65,7 +70,7 @@ body {
 
 /* width */
 #container::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
   margin-right: 25px;
 }
 
@@ -93,6 +98,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: #000 2px 2px 5px;
   padding: 1em;
+  background-color: whitesmoke;
 }
 
 .grid-container .card {
@@ -155,7 +161,7 @@ a {
   bottom: 0;
   left: 0;
   visibility: hidden;
-  background: #fff;
+  background: rgb(255, 255, 255, 0.5);
   overflow: auto;
   color: #000;
 }
@@ -164,7 +170,17 @@ a {
   margin: auto;
   width: 90%;
   border: 2px solid #000;
+  background-image: url(../dist/images/background\ 2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 1rem;
+}
+
+.background-blured {
+  background-color: rgb(245, 245, 245, 0.5);
+  padding: 1em;
+  border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .popup-header {
@@ -176,15 +192,22 @@ a {
 }
 
 .thumbnail {
-  width: 40%;
+  width: 70%;
   background-image: url(../dist/images/loading.gif);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   margin-right: 1rem;
 }
 
 .close-icon {
+  color: whitesmoke;
+  text-shadow: #000 2px 2px 5px;
   font-weight: bolder;
+  font-size: xx-large;
+  position: absolute;
+  top: auto;
+  right: 3em;
 }
 
 .close-icon:hover {
@@ -249,7 +272,8 @@ a {
 footer {
   position: fixed;
   bottom: 0;
-  background-color: rgb(80, 80, 80);
+  background-color: rgba(187, 186, 185, 0.5);
+  backdrop-filter: blur(2px);
   padding: 2rem;
   width: 100%;
   margin: 0 2px;
