@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1653037668129" clover="3.2.0">
+  <project timestamp="1653037668130" name="All files">
+    <metrics statements="26" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2" elements="30" coveredelements="14" complexity="0" loc="26" ncloc="26" packages="1" files="1" classes="1"/>
+    <file name="involvement-api.js" path="/home/mahmoud/Courses/web practice/Microverse/Tasty-Recipes-API/src/modules/involvement-api.js">
+      <metrics statements="26" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="26" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
+      <line num="48" count="0" type="stmt"/>
+      <line num="50" count="1" type="stmt"/>
+      <line num="52" count="0" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+      <line num="57" count="2" type="stmt"/>
+      <line num="58" count="2" type="stmt"/>
+      <line num="59" count="0" type="stmt"/>
+      <line num="61" count="2" type="stmt"/>
+      <line num="63" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
