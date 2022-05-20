@@ -30,24 +30,29 @@
                 close
             </span>
         </div>
-        <div class="popup-content">
-          <h1 class="recipe-title">Loading...</h1>
-          <p class="popup-desc"></p>
+
+        <div class="background-blured">
+          <div class="popup-content">
+            <h1 class="recipe-title">Loading...</h1>
+            <p class="popup-desc"></p>
+          </div>
+          
+          <div class="comments-container">
+            <p class="comments-header">Comments<span class="counter-span">(0)</span></p>
+            <ul class="comments-list"></ul>
+          </div>
+
+          <div class="form-container">
+            <h3 class="form-header">Add a comment</h3>
+            <form class="comment-form">
+              <input class="name-input input" type="text" placeholder="Your name">
+              <textarea class="comment-input input" placeholder="Your insights" rows="4" cols="25"></textarea>
+              <input class="comment-btn input" type="submit" value="Comment">
+            </form>
+          </div>
         </div>
         
-        <div class="comments-container">
-          <p class="comments-header">Comments<span class="counter-span">(0)</span></p>
-          <ul class="comments-list"></ul>
-        </div>
-
-        <div class="form-container">
-          <h3 class="form-header">Add a comment</h3>
-          <form class="comment-form">
-            <input class="name-input input" type="text" placeholder="Your name">
-            <textarea class="comment-input input" placeholder="Your insights" rows="4" cols="25"></textarea>
-            <input class="comment-btn input" type="submit" value="Comment">
-          </form>
-        </div>
+        
       </div>
   </section>
 
