@@ -16,7 +16,10 @@ const displayCards = async (recipes) => {
     const card = document.createElement('ul');
     card.innerHTML = `<li><img src= ${recipes[i].thumbnail_url}></li>
     <li class="text1">${recipes[i].name}</li>
-    <li class="text2"><button type="button" class="likes" id="${recipes[i].id}">.....</button><br>Likes ${nroLikes}</li>
+    <li class="text2">
+      <button type="button" class="likes" id="${recipes[i].id}">.....</button>
+      <br><p class="likes-count" id="p${i}">Likes ${nroLikes}</p>
+      </li>
     <button type= "button" class= "comment" id="${i}">Comment</button>`;
     card.className = 'card';
     container.append(card);
@@ -26,8 +29,9 @@ const displayCards = async (recipes) => {
     });
     const likeBtn = document.getElementById(`${recipes[i].id}`);
     likeBtn.addEventListener('click', () => {
+      const likesText = document.getElementById(`p${i}`);
       const itemId = recipes[i].id;
-      likeBtn.parentNode.innerHTML = `<button type="button" class="likes" id="${recipes[i].id}">.....</button><br>Likes ${nroLikes + 1}</li>`;
+      likesText.textContent = `Likes ${nroLikes += 1}`;
       addLike(itemId);
     });
   }
