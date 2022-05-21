@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>Tasty Recipes</title>
+</head>
+<body>
+  <header class="header">
+    <ul class="nav">
+      <li><img src="./images/tastyRecipesLogo.png" alt="logo"></li>
+      <li>Recepies</li>
+      <li>Favorites</li>
+      <li>About us</li>
+    </ul>
+  </header>
+
+  <main id="container">
+    <div class="counter"></div>
+    <div class="grid-container"></div>
+  </main>
+
+  <section class="overlay">
+      <div class="popup-container">
+        <div class="popup-header">
+            <div class="thumbnail"></div>
+            <span class="material-symbols-outlined close-icon">
+                close
+            </span>
+        </div>
+
+        <div class="background-blured">
+          <div class="popup-content">
+            <h1 class="recipe-title">Loading...</h1>
+            <p class="popup-desc"></p>
+          </div>
+          
+          <div class="comments-container">
+            <p class="comments-header">Comments<span class="counter-span">(0)</span></p>
+            <ul class="comments-list"></ul>
+          </div>
+
+          <div class="form-container">
+            <h3 class="form-header">Add a comment</h3>
+            <form class="comment-form">
+              <input class="name-input input" type="text" placeholder="Your name">
+              <textarea class="comment-input input" placeholder="Your insights" rows="4" cols="25"></textarea>
+              <input class="comment-btn input" type="submit" value="Comment">
+            </form>
+          </div>
+        </div>
+        
+        
+      </div>
+  </section>
+
+  <footer class="footer">
+    <p class="rights">Created by 
+      <a class="developer" href="https://github.com/devMahmoud">Mahmoud Makhlouf</a>
+      & <a class="developer" href="https://github.com/marurevi">Mariana Revilla</a>
+    </p>
+  </footer>
+</body>
+</html>

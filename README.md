@@ -1,56 +1,78 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# TASTY RECIPIES | API-based webapp
+We built our own web application based on an external API. We selected an [API](https://rapidapi.com/apidojo/api/tasty/) that provides data about food recipies. The webapp has 2 user interfaces:
 
-> Description the project.
+- A home page showing a list of items that you can "like."
+- A popup window with more data about an item that you can use to comment on it or reserve it for a period of time.
+In this pages we implement the followings features:
+## Home page
+ > When the page loads, the webapp retrieves data from:
+  The selected API and shows the list of items on screen.
+  The Involvement API to show the item likes.
+  The page make only 2 requests:
+    - One to the base API.
+    - And one to the Involvement API.
+  > When the user clicks on the Like button of an item, the interaction is recorded in the Involvement 
+  >  API and the screen is updated.
+  > When the user clicks on the "Comments" button, the Comments popup appears.
 
+## Comments popup
+> When the popup loads, the webapp retrieves data from:
+> The selected API and shows details about the selected item.
+> The Involvement API to show the item comments.
+> When the user clicks on the "Comment" button, the data is recorded in the Involvement API and the screen is updated.
+
+## Counters We have counters in all the interfaces that show:
+
+- The number of items (home).
+- The number of comments (comments popup).
+- We created a specific function to calculate these numbers in each page. These count functions were tested using Jest.
 
 ## Built With
 
 - Major languages
+    HTML, CSS, JavaScript
 - Frameworks
+    Webpack, Jest
 - Technologies used
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://marurevi.github.io/Tasty-Recipes-API/dist/index.html)
+
+
+![presentation](https://user-images.githubusercontent.com/92180054/169616865-51ae370d-e276-4e74-a592-6679250cf875.png)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
-
+ Get the latest version of Node.js
 ### Install
-
+ npm install
 ### Usage
-
+ npm run start
 ### Run tests
+ npm run test
 
 ### Deployment
-
-
+ npm run start
 
 ## Authors
 
-👤 **Author1**
+👤 **Mariana Revilla Lérida**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@marurevi](https://github.com/marurevi)
+- Twitter: [@MaruRevilla](https://twitter.com/MaruRevilla)
+- LinkedIn: [Mariana-Revilla-Lérida](https://linkedin.com/in/mariana-revilla-l%C3%A9rida-a12aba143)
 
-👤 **Author2**
+👤 **Mahmoud Makhlouf**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@devMahmoud](https://github.com/devMahmoud)
+- LinkedIn: [Mahmoud Makhlouf](https://www.linkedin.com/in/mahmoud-makhlouf-844271211/)
 
 ## 🤝 Contributing
 
